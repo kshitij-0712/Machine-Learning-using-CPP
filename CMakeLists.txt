@@ -4,7 +4,7 @@
     # Add the CSVDatasetLibrary as a subdirectory.
     # This will process the CMakeLists.txt inside csv_dataset_library/
     # and make the 'CSVDatasetLibrary' target available in this project.
-    add_subdirectory(csv_dataset_library)
+    add_subdirectory(CSVdatasetLibrary)
 
     # Now define your main machine learning application executable
     # add_executable(MLApp src/main_ml_app.cpp)
@@ -12,7 +12,7 @@
     # Link your MLApp against the CSVDatasetLibrary.
     # The name 'CSVDatasetLibrary' must match the project/library name
     # defined in csv_dataset_library/CMakeLists.txt.
-    target_link_libraries(MLApp PRIVATE CSVDatasetLibrary)
+   #  target_link_libraries(MLApp PRIVATE CSVDatasetLibrary)
 
     # You might also add include directories for your main ML app's own headers
     # target_include_directories(MLApp PRIVATE
